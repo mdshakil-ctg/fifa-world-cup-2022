@@ -1,0 +1,128 @@
+/*----------- phone device---------- */
+@media screen and (max-width: 576px) {
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+  }
+  .container .half-width {
+    width: 100%;
+  }
+  .link {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  .header-text p {
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* -----------aside------------ */
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+  }
+  aside {
+    background-color: #fff;
+    margin-right: .6rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 5rem;
+  }
+  .nav-link {
+    border: 1px solid gray;
+    padding: 1rem 2rem;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .blog-details,
+  .blog-details img {
+    width: 100%;
+  }
+
+  /* ------footer------ */
+  
+  .footer {
+    text-align: center;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    opacity: 0.5;
+    font-size: 0.9rem;
+  }
+  .button-tab {
+    display: none;
+  }
+}
+
+/* -----------tab device-----------*/
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    margin: 0 0 1rem 0;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog-details,
+  .blog-details img {
+    width: 100%;
+  }
+
+  aside {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(158, 15, 15);
+  }
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li a {
+    border: 1px solid gray;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+  /* -----button tab----------- */
+  .button-ipad {
+    display: block;
+    background-color: tomato;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem auto;
+  }
+}

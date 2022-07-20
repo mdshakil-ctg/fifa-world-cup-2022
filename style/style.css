@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1240px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: 0.5;
+  color: #212529;
+}
+/* -------------top header section---------- */
+h1 {
+  font-size: 4rem;
+  color: #343a40;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+}
+.container {
+  display: flex;
+  gap: 2rem;
+  background-color: #83d6cfdc;
+  border-radius: 15px;
+  margin: 5rem 0;
+  padding: 1rem 2rem;
+}
+
+/* start animation */
+
+@keyframes home {
+  0%{
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(150px);
+  }
+}
+@keyframes aside {
+  0%{
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(150px);
+  }
+}
+/* end animation */
+.container .half-width {
+  width: 50%;
+}
+.container .half-width img {
+  max-width: 100%;
+}
+.container:hover img {
+  animation: home 1.5s linear;
+}
+
+.link {
+  display: inline-block;
+  background-color: red;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link span {
+  margin-left: 0.5rem;
+}
+
+/* -----------aside css start------- */
+
+aside {
+  background-color: #161616;
+  max-width: 300px;
+  max-height: 268px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+.main-section:hover aside{
+  animation: aside  2s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.navbar ul li {
+  list-style: none;
+}
+.nav-link {
+  background-color: #fff;
+  color: #161616;
+  margin: 1rem;
+  width: 200px;
+}
+#match {
+  background-color: #f03e3e;
+  color: #fff;
+}
+#blog{
+  background-color: #f03e3e;
+  color: #fff;
+}
+/* aside css end  */
+
+/* ---------blog css start--------- */
+.main-section {
+  display: flex;
+  gap: 2rem;
+  margin: 6rem 0;
+  /* align-items: center; */
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.blog-details {
+  box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.699);
+  border-radius: 12px;
+  background-color: lightblue;
+  padding: 1rem;
+}
+.blog-details h4 {
+  margin-bottom: 0.8rem;
+}
+.icons {
+  display: flex;
+  gap: 2rem;
+  opacity: 0.75;
+}
+.icons span {
+  margin-right: 0.8rem;
+}
+.button {
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  margin: 0.7rem;
+  background-color: #f03e3ea8;
+}
+
+/* ----------button-ipad----------- */
+
+.button-ipad {
+  display: none;
+}
+/* -----------footer start----------- */
+.footer {
+  background-color: #5383ccec;
+  color: white;
+  padding: 5rem;
+  text-align: center;
+}
+.footer h2{
+  font-size: 3rem;
+}
+hr {
+  margin: 2rem 0;
+  max-width: 1100px;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #741c1ce0;
+  font-size: 1.1rem;
+  opacity: .7;
+}
+
+.social-icons ul {
+  list-style: none;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+}
+.social-icons a {
+  border-radius: 50%;
+  font-size: 3rem;
+  color: #611a1a;
+}
+/* ------------------football website------------- */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+.flags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*-------- end of css -------- */
